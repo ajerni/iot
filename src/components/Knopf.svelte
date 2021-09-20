@@ -21,7 +21,7 @@
       console.log("*reactive* doubled counter: " + doubled);
       //...
     }
-    
+
     let eventSource = new EventSource("https://api.spark.io/v1/devices/" + DEVICE_ID + "/events/?access_token=" + AUTH_TOKEN);
     
     eventSource.addEventListener('knopf', function(e) {

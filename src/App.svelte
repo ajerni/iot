@@ -16,16 +16,15 @@
     </div>
   </div>
 
-  <Router url="{url}">
-    <nav>
+  <Router url="{url}" >
+    <nav class="navclass">
       <Link to="/">Home</Link>
       <Link to="particle">Particle</Link>
-      <!-- <Link to="blog">Blog</Link> -->
     </nav>
     <div>
-      <!-- <Route path="blog/:id" component="{BlogPost}" /> -->
+      <!-- go from most specific to least specific /> -->
       <!-- <Route path="blog" component="{Blog}" /> -->
-      <Route path="particle" component="{Particle}" />
+      <Route path="particle" component="{Particle}"/>
       <Route path="/"><Home /></Route>
     </div>
   </Router>
@@ -93,5 +92,24 @@
   /* transform: translate(-50%, -50%); */
   color: white;
 }
+
+.navclass {
+  font-size:2rem; 
+  padding-top: 20px; 
+}
+
+:global(a) {
+      text-decoration: none;
+      color: rgb(5, 5, 145);
+      padding: 0px 50px;
+}
+
+:global(a):hover {
+      font-size: 1.8rem;
+      color: blue;
+}
+    
+
+
 
 </style>

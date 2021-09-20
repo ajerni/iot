@@ -1,3 +1,1 @@
-<h1>Particle code description
-    
-</h1>
+<h1>Particle code</h1>
