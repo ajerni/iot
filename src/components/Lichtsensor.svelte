@@ -25,7 +25,7 @@
 
 </script>
 
-<!-- <div class={check ? classA : classB}></div> ---- Alternative mit ternary operator -->
+<!-- <div class={check ? classA : classB}></div> --- Alternative mit ternary operator -->
 <div class="myCardStyle {bgColor}">
     <h1>Lichtsensor</h1>
     <h2 id="text">Hintergrund wechselt die Farbe</h2>
