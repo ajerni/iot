@@ -2,6 +2,8 @@
 
 This page interacts with Particle devices (Arduino based boards with WiFi) and is a learning example on Svelte.js and general use of Javascript and CSS as well.
 
+https://iot.andierni.ch/
+
 ## Technical info (Svelte + Vite)
 
 This site is built with the Vite template for Svelte. It's using plain Javascript (Mainly Fetch API) to interact with Particle Photon boards.
