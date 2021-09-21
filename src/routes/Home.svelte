@@ -42,7 +42,7 @@
 
 
 
-<h1>Andi's IOT Cockpit</h1>
+<h1>IOT Cockpit</h1>
 
   <div class="wrapper">
     
