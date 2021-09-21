@@ -243,7 +243,7 @@ void loop()
     //Lichtsensor (Photovoltaik)
     reading = analogRead(A0);
     
-    if (reading < 1000 && hell_dunkel_sent == false) {
+    if (reading <= 1000 && hell_dunkel_sent == false) {
         
         Spark.publish("andi_dunkel");
         hell_dunkel_sent = true;
