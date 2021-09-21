@@ -12,7 +12,7 @@
   <div class="hero-image">
     <div class="hero-text">
       <h2>Andi's Test Drive with the Internet of Things</h2>
-      <h3>Diese Seite interagiert mit 2 Particle Photon Boards.</h3>
+      <h3><a href="https://github.com/ajerni/iot">Diese Seite</a>interagiert mit 2 Particle Photon Boards.</h3>
     </div>
   </div>
 
@@ -107,6 +107,13 @@
 :global(a):hover {
       font-size: 1.8rem;
       color: blue;
+}
+
+h3 a, h3 a:active, h3 a:visited, h3 a:hover {
+    text-decoration:underline;
+    color: white;
+    font-size: inherit;
+    padding: 0px 5px;
 }
     
 </style>
