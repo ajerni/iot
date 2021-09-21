@@ -38,10 +38,6 @@
 
 </script>
 
-
-
-
-
 <h1>IOT Cockpit</h1>
 
   <div class="wrapper">
