@@ -5,7 +5,7 @@
     const dispatch = createEventDispatcher() //dieser dipatcher sendet events mit data (event.detail) an die Mutter-Komponente
     let data = {
       name: "Message",
-      text: "Hier erkläre ich ausführlich wie die Message Komponente funktioniert. Das dar ruhig eine längere Geschichte sein...",
+      text: "Fetch API mit GET Request um auf Particle.variable zuzugreifen und POST Request um Particle.function aufzurufen.",
     }
     
     const DEVICE_ID = "2c0030000447343337373739";

@@ -8,7 +8,7 @@
     }
     let data = {
       name: "Knopf auf Particle Photon",
-      text: "Hier erkläre ich wie die Knopf Komponente funktioniert..."
+      text: "Ein Knopfdruck auf Photon A trigert den Event 'knopf' (Particle.publish). Die Variable counter (Particle.variable) wird über einen GET Request (Fetch API) ausgelesen, sobald Photon A den Event 'knopf' sendet. Der entsprechende Event Listener auf der Homepage wird auf einer EventSource-Instanz registriert (eventSource.addEventListener())."
     }
 
     const DEVICE_ID = "2c0030000447343337373739";

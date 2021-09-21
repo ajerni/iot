@@ -4,7 +4,7 @@ import {createEventDispatcher} from 'svelte'; //nichts mit Photon zu tun
     const dispatch = createEventDispatcher() //dieser dipatcher sendet events mit data (event.detail) an die Mutter-Komponente
     let data = {
       name: "Trigger",
-      text: "Hier erkläre ich ausführlich wie die Trigger Komponente funktioniert. Da gibts rot, grün und beide. Supidupi!",
+      text: "Ruft mit Fetch API POST Request die Particle.function 'redgreen' auf, welche die entsprechenden LEDs schaltet.",
 }
 
 const DEVICE_ID = "2c0030000447343337373739";

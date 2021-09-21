@@ -3,7 +3,7 @@
     const dispatch = createEventDispatcher() //dieser dipatcher sendet events mit data (event.detail) an die Mutter-Komponente
     let data = {
       name: "Lichtsensor",
-      text: "Hier erkläre ich wie den Lichtsensor wie Tag und Nacht."
+      text: "Die EventSource-Instanz (eventSource.addEventListener) hört auf die Events 'andi_hell' und 'andi_dunkel', welche von Photon A gesendet (Particle.publish) werden, sobald der Lichtsensor einen Schwellwert erreicht. Dies ändert dann über dynamisch zugewisene CSS Klassen die Hintergrundfarbe. Auch Particle B hört auf diese Events (Particle.subscribe) und schaltet entsprechend das LED."
     }
 
       const DEVICE_ID = "2c0030000447343337373739";

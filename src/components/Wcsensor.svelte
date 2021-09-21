@@ -4,7 +4,7 @@
     const dispatch = createEventDispatcher() //dieser dipatcher sendet events mit data (event.detail) an die Mutter-Komponente
     let data = {
       name: "Magnestsensor",
-      text: "aka hisorical WC Frei / Besetzt Sensor aus der Binz 3!",
+      text: "EventSource (eventSource.addEventListener) hört auf die von Photon B gesendeten (Particle.publish) Events 'offen' und 'zu'. In den Callback-Funktionen wird dann über eine status Variable das gewünschte Element angezeigt.",
     }
 
     const DEVICE_ID = "2d0040000847343337373738";
@@ -24,6 +24,7 @@
 
 </script>
 
+<!-- <div class={varxy ? classA : classB}> wäre eine Alternative um CSS Klassen dynamich anzuwenden -->
 <div class="myCardStyle">
     <h1>Magnetsensor</h1>
     <h3 class="info" on:click={() => {dispatch("showModalforWc", data)}}>INFO</h3>

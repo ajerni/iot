@@ -14,8 +14,6 @@
     let komponentenName = "";
     let modalContent = "";
     
-    let eventSource = new EventSource("https://api.spark.io/v1/devices/" + DEVICE_ID + "/events/?access_token=" + AUTH_TOKEN);
-
     //let showModal = (event) => {}
 
     function showModal(event){
