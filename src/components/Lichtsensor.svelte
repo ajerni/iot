@@ -11,35 +11,30 @@
 
       let eventSource = new EventSource("https://api.spark.io/v1/devices/" + DEVICE_ID + "/events/?access_token=" + AUTH_TOKEN);
       
-      let bgColor = "white";
+      let dunkel = false;
 
       eventSource.addEventListener('andi_dunkel', function(e) {
-        bgColor = "black";
+        dunkel = true;
       }, false);
   
       eventSource.addEventListener('andi_hell', function(e) {
-        bgColor = "white";
+        dunkel = false;
       }, false);
-
-      
 
 </script>
 
-<!-- <div class={check ? classA : classB}></div> --- Alternative mit ternary operator -->
-<div class="myCardStyle {bgColor}">
-    <h1>Lichtsensor</h1>
-    <h2 id="text">Hintergrund wechselt die Farbe</h2>
-    <h3 class="info" on:click={() => {dispatch("showModalforLicht", data)}}>INFO</h3>
-    
-</div>
+  <div class="myCardStyle {dunkel ? "black" : ""}">
+      <h1>Lichtsensor</h1>
+      <h2 id="text">Hintergrund wechselt die Farbe</h2>
+      <h3 class="info" on:click={() => {dispatch("showModalforLicht", data)}}>INFO</h3>
+  </div>
 
 <style>
     .black{
-        background: greenyellow;
+        background: black;
+        color: white;
     }
-    .white{
-        background: white;
-    }
+    
     #text{
         font-size: medium;
         font-weight: 300;
