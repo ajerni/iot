@@ -1,5 +1,7 @@
 <script>
-    import {createEventDispatcher} from 'svelte'; //nichts mit Photon zu tun
+   import { token } from './token-store.js'
+   
+   import {createEventDispatcher} from 'svelte'; //nichts mit Photon zu tun
     const dispatch = createEventDispatcher() //dieser dipatcher sendet events mit data (event.detail) an die Mutter-Komponente
     let exampleData = {
       name: "Andi",
@@ -12,7 +14,8 @@
     }
 
     const DEVICE_ID = "2c0030000447343337373739";
-    const AUTH_TOKEN = "906d5e4a9041e4c0773cad80ccf23490fe83e76c";
+    // Das $ Zeichen macht automatisch token.subscribe() und unsubscribe() auch wieder, wenn geschlossen würde. Siehe auch set() und update() für Svelte store (writabele und readable stores verfügbar)
+    const AUTH_TOKEN = $token;
 
     let counter = 0;
     //nur als Beispiel: die reaktiven variablen und statements ($:) updaten immer automatisch, wenn eine var (auf der rechten Seite) sich ändert

@@ -1,4 +1,5 @@
 <script>
+    import { token } from './token-store.js'
     import {createEventDispatcher} from 'svelte'; //nichts mit Photon zu tun
     const dispatch = createEventDispatcher() //dieser dipatcher sendet events mit data (event.detail) an die Mutter-Komponente
     let data = {
@@ -6,7 +7,7 @@
       text: "Der Alarmknopf triggert einen Event (alarmall) ab der Homepage (POST request mit Fetch API) auf den Photon A und Photon B hören (Particle.subscribe)."
     }
 
-    const AUTH_TOKEN = "906d5e4a9041e4c0773cad80ccf23490fe83e76c";
+    const AUTH_TOKEN = $token;
 
     function publishEvent(){
 

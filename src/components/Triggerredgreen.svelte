@@ -1,4 +1,5 @@
 <script>
+import { token } from './token-store.js'
 
 import {createEventDispatcher} from 'svelte'; //nichts mit Photon zu tun
     const dispatch = createEventDispatcher() //dieser dipatcher sendet events mit data (event.detail) an die Mutter-Komponente
@@ -8,7 +9,7 @@ import {createEventDispatcher} from 'svelte'; //nichts mit Photon zu tun
 }
 
 const DEVICE_ID = "2c0030000447343337373739";
-const AUTH_TOKEN = "906d5e4a9041e4c0773cad80ccf23490fe83e76c";
+const AUTH_TOKEN = $token;
 
 let value = "none";
 let items = ["red", "green", "both", "none"];
