@@ -25,6 +25,10 @@
     let eventSource = new EventSource("https://api.spark.io/v1/devices/" + DEVICE_ID + "/events/?access_token=" + AUTH_TOKEN);
     
     eventSource.addEventListener('knopf', function(e) {
+      // falls event data ausgelesen werden soll: (hier der Text "Knopf wurde gedrückt" --> siehe Photon A code)
+      // @ts-ignore
+      var data = JSON.parse(e.data);
+      console.log(data.data);
 
       //GET (um auf Particle.variable zuzugreifen)   
       let variable = "counter";
