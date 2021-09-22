@@ -113,7 +113,8 @@ h3 a, h3 a:active, h3 a:visited, h3 a:hover {
     text-decoration:underline;
     color: white;
     font-size: inherit;
-    padding: 0px 5px;
+    padding-right: 5px;
+    padding-left: 0px;
 }
     
 </style>
