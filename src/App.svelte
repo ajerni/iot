@@ -3,6 +3,7 @@
   export let url = "";
   import Home from './routes/Home.svelte';
   import Particle from './routes/Particle.svelte'
+
   // import logo from './assets/svelte.png'
 </script>
 
@@ -16,7 +17,7 @@
     </div>
   </div>
 
-  <Router url="{url}" >
+  <Router url="{url}">
     <nav class="navclass">
       <Link to="/">Home</Link>
       <Link to="particle">Particle</Link>
